@@ -12,6 +12,6 @@ app.use(cors());
 app.use("/categoria", categoria);
 app.use("/producto", producto);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
 console.log('Servidor iniciado en http://localhost:3000');
 });
