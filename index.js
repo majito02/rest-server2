@@ -2,9 +2,9 @@ const express = require('express');
 
 const categoria = require("./router/Categorias");
 const producto = require("./router/productos");
-
 const app = express();
 const cors = require("cors");
+require('dotenv').config();
 require("./database/config").dbConnection();
 app.use(express.json());
 
